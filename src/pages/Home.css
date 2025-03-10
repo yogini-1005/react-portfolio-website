@@ -1,0 +1,115 @@
+/* Home Section */
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.home {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+  padding: 0 10%;
+  background: #1e293b;
+  color: white;
+}
+
+/* Left Content */
+.content {
+  max-width: 50%;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.highlight {
+  color: #f4c10f; /* Yellow */
+}
+
+.sub-title {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+.resume-button {
+  margin-top: 20px;
+  background: #f4c10f;
+  color: black;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.resume-button:hover {
+  background: #ffdd57;
+  transform: translateY(-3px);
+}
+
+.dark-mode a {
+  color: black;
+  text-decoration: none;
+}
+
+/* Profile Image */
+/* Profile Wrapper */
+.profile-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Circle Border */
+.circle-border {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 3px dashed #f1c40f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Profile Picture */
+.profile-pic {
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Icon Container */
+.icon-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Space between icons */
+  margin-top: 15px; /* Space below profile pic */
+}
+
+/* Individual Icons */
+.icon-wrapper {
+  width: 40px;
+  height: 40px;
+  background: #f4c10f;
+  color: #1e293b;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, background 0.3s;
+  font-size: 18px;
+}
+
+.icon-wrapper:hover {
+  transform: scale(1.2);
+  background: #f3dc5c;
+  cursor: pointer;
+}

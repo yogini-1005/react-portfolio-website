@@ -1,0 +1,170 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.projects {
+  text-align: center;
+  height: 100vh;
+  background: #1e293b;
+  width: 100%;
+  }
+  
+  .projects-grid {
+    display: flex;
+    gap: 65px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 30px auto;
+  }
+
+  .projects h1{
+    font-size: 2rem;
+    color: #f1c40f;
+    margin-bottom: 30px;
+    padding-top: 120px;
+  }
+  
+/* 🔹 Ensure all project cards have the same background */
+.project-card {
+  background: #5e6b78;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 235px;
+    height: 345px;
+    transition: transform 0.3s ease -in-out;
+    position: relative;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* 🔹 Fix hover effect */
+.project-card:hover {
+  transform: scale(1.05);
+  background: #e0c24b;
+  color: black;
+  cursor: pointer;
+}
+
+.project-card:hover button{
+  background-color: #283b4d;
+  color: white;
+  cursor: pointer;
+}
+
+.project-card:hover button:hover{
+  background-color: white;
+  color: #283b4d;
+  border: solid 2px #283b4d;
+  cursor: pointer;
+}
+
+/* 🔹 Button uniformity */
+.projects-grid button {
+  margin-top: 20px;
+    background: #f4c10f;
+    color: black;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+    right: 67px;
+    top: 278px;
+    position: absolute;
+}
+
+/* 🔹 Image Styling */
+.project-card img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 32px;
+  object-fit: contain;
+}
+
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* Modal Content */
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  width: 400px;
+  max-width: 90%;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Modal Image */
+.modal-content img {
+  width: 100%;
+  max-width: 120px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+/* Modal Title */
+.modal-content h2 {
+  font-size: 26px;
+    color: #1e293b;
+  margin-bottom: 10px;
+}
+
+/* Modal Description */
+.modal-content p {
+  font-size: 17px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+/* Buttons */
+.modal-content .buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.view-btn, .close-btn {
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.view-btn {
+  background: #4CAF50;
+  color: white;
+}
+
+.view-btn:hover {
+  background: #228425;
+}
+
+.close-btn {
+  background: #d33;
+  color: white;
+}
+
+.close-btn:hover {
+  background: rgb(167, 31, 31);
+}
+
+
+  
