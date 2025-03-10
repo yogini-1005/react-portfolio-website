@@ -10,7 +10,7 @@ const Contact = lazy(() => import("./pages/Contact"));
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/react-portfolio-website">
       <Navbar />
       <Suspense fallback={<div>Loading...</div>}>
         <Routes>
