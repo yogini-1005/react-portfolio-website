@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import { lazy, Suspense } from "react";
 import Navbar from "./components/Navbar";
 
@@ -10,7 +10,7 @@ const Contact = lazy(() => import("./pages/Contact"));
 
 function App() {
   return (
-    <BrowserRouter basename="/react-portfolio-website">
+    <HashRouter>
       <Navbar />
       <Suspense fallback={<div>Loading...</div>}>
         <Routes>
@@ -22,7 +22,7 @@ function App() {
           <Route path="/*" element={<Home />} />
         </Routes>
       </Suspense>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

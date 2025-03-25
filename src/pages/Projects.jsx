@@ -11,7 +11,7 @@ Modal.setAppElement("#root"); // To prevent accessibility issues
 const projects = [
   { name: "Amazon Clone Website", image: amazon, description: "A static Amazon Clone built using HTML and CSS, replicating the UI of Amazon's homepage.The project includes a responsive navbar, product sections, banner sliders, and a footer. This clone focuses on layout design and styling to closely match Amazon's look and feel.", link: "https://github.com/yogini1005" },
   { name: "Beauty Products Website", image: beautyproducts, description: "A Java full-stack website for browsing skincare products with a classic UI and cash-on-delivery option. The platform allows users to explore various beauty products, add them to their cart, and place orders. Features include product search, filtering, and a simple checkout process.", link: "https://github.com/yogini1005" },
-  { name: "Portfolio Website Generator", image: portfolio, description: "A simple portfolio with theme customization and file download options. Users can choose a theme, view skills and projects.", link: "https://github.com/yogini1005" },
+  { name: "React Portfolio Website", image: portfolio, description: "A simple portfolio with theme customization and file download options. Users can choose a theme, view skills and projects.", link: "https://github.com/yogini1005" },
   { name: "Household Services Provider Website", image: household, description: "A web platform connecting users with service providers like electricians, plumbers, and maids. Users can register, browse service providers, book appointments, and track their requests. Service providers can manage bookings and update their availability in real-time.", link: "#" }
 
 ];

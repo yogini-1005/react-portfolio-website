@@ -110,6 +110,16 @@
   width: 80%;
 }
 
+.progress-Bs{
+  background: skyblue;
+  width: 90%;
+}
+
+.progress-myGit{
+  background: skyblue;
+  width: 85%;
+}
+
 /* 🔹 Responsive Design */
 @media (max-width: 1024px) {
   .skills-grid {

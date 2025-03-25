@@ -1,39 +1,33 @@
 import React, { useContext } from "react";
-import Swal from "sweetalert2"; // Import SweetAlert2
+import Swal from "sweetalert2";
 import "./Home.css";
-import profileImage from "../assets/images/bg.jpg"; // Ensure the image is in 'src/assets/'
+import profileImage from "../assets/images/bg.jpg";
 import { FaGithub, FaLinkedin, FaEnvelope, FaFileAlt } from "react-icons/fa";
 import ThemeContext from "../context/ThemeContext";
+import cvPdf from "../../public/cv.pdf"; // Make sure this path is correct
 
 const Home = () => {
   const { theme } = useContext(ThemeContext);
 
   const handleDownload = () => {
-    Swal.fire({
-      title: "Download CV",
-      text: "Do you want to download the CV?",
-      icon: "question",
-      showCancelButton: true,
-      confirmButtonText: "Yes, Download",
-      cancelButtonText: "Cancel",
-      confirmButtonColor: "#4CAF50",
-      cancelButtonColor: "#d33",
-    }).then((result) => {
-      if (result.isConfirmed) {
-        const link = document.createElement("a");
-        link.href = "/cv.pdf"; // Ensure the file exists in the public folder
-        link.download = "resume.pdf";
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-        Swal.fire({
-          title: "Download Started!",
-          text: "Your CV is being downloaded.",
-          icon: "success",
-          confirmButtonColor: "#4CAF50",
-        });
-      }
-    });
+    try {
+      // Create download link
+      const link = document.createElement("a");
+      link.href = cvPdf;
+      link.download = "Yogini-Girigosavi-CV.pdf"; // Name when downloaded
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      
+      Swal.fire("Success!", "CV download started", "success");
+    } catch (error) {
+      console.error("Download failed:", error);
+      Swal.fire({
+        title: "Error!",
+        text: "Failed to download CV. Please try again or contact me directly.",
+        icon: "error"
+      });
+    }
   };
 
   return (
@@ -57,7 +51,7 @@ const Home = () => {
         {/* Icons Below Profile */}
         <div className="icon-container">
           <a
-            href="https://github.com/yogini1005"
+            href="https://github.com/yogini-1005"
             target="_blank"
             rel="noopener noreferrer"
             className="icon-wrapper"

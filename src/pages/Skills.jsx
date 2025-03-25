@@ -7,6 +7,8 @@ import javaIcon from "../assets/images/java.png";
 import springBootIcon from "../assets/images/springboot.png";
 import reactIcon from "../assets/images/react.png";
 import mysqlIcon from "../assets/images/mysql.png";
+import BsIcon from "../assets/images/bootstrap.png";
+import gitIcon from "../assets/images/github.png";
 
 const skills = [
   { name: "HTML", icon: htmlIcon, progressClass: "progress-html" },
@@ -15,7 +17,9 @@ const skills = [
   { name: "Java", icon: javaIcon, progressClass: "progress-java" },
   { name: "Spring Boot", icon: springBootIcon, progressClass: "progress-springboot" },
   { name: "React JS", icon: reactIcon, progressClass: "progress-react" },
-  { name: "MySQL", icon: mysqlIcon, progressClass: "progress-mysql" }
+  { name: "MySQL", icon: mysqlIcon, progressClass: "progress-mysql" },
+  { name: "Bootstrap", icon: BsIcon, progressClass: "progress-Bs" },
+  { name: "GitHub", icon: gitIcon, progressClass: "progress-myGit" }
 ];
 
 const Skills = () => {
